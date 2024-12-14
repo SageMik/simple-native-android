@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "io.github.sagemik"
-version = "1.0.1"
+version = "1.0.2"
 description = "Simple 的 Android 原生库，用于 sqlite3_simple Flutter 插件"
 
 android {
