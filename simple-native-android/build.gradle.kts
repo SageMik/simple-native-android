@@ -1,5 +1,4 @@
 import com.vanniktech.maven.publish.AndroidSingleVariantLibrary
-import com.vanniktech.maven.publish.SonatypeHost
 
 plugins {
     alias(libs.plugins.android.library)
@@ -7,13 +6,13 @@ plugins {
 }
 
 group = "io.github.sagemik"
-version = "1.0.3"
+version = "1.0.4"
 description = "Simple 的 Android 原生库，用于 sqlite3_simple Flutter 插件。"
 
 android {
     namespace = "io.github.sagemik.simple_native_android"
 
-    compileSdk = 34
+    compileSdk = 36
     ndkVersion = "23.1.7779620"
 
     defaultConfig {
@@ -39,10 +38,7 @@ android {
 }
 
 mavenPublishing {
-    publishToMavenCentral(
-        host = SonatypeHost.CENTRAL_PORTAL,
-        automaticRelease = false
-    )
+    publishToMavenCentral(automaticRelease = false)
 
     signAllPublications()
 

@@ -1,6 +1,6 @@
 [versions]
-android-library = "8.3.0"
-maven-publish = "0.29.0"
+android-library = "8.12.0"
+maven-publish = "0.34.0"
 
 [libraries]
 
